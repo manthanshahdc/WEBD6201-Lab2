@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <!--container start-->
+    <div id="container">
+      <div id="container_body">
+        <div>
+          <h2 class="form_title">Register</h2>
+          <div class="head_para">
+            Create your own account. It's free and only takes a minute.</div>
+    </div>
+    <!--Form  start-->
+        <div id="form_name">
+          <div class="firstnameorlastname">
+           <form name="form">
+           <div id="errorBox">
+    </div>
+    <!-- First Name and Last Name detail-->
+    <input name="Name" class="input_name" id="fname" oninput="validateField(this.id,this.value)" minlength="2" type="text" placeholder="First Name" value="">
+            <input name="LastName" class="input_name"  id="lname"  oninput="validateField(this.id,this.value)" minlength="2" type="text" placeholder="Last Name" value="">
+          </form>
+    </div>
+    <!-- Email Address detail-->
+    <div id="email_form">
+            <input name="Email" class="input_email" id="femail"  oninput="validateField(this.id,this.value)" type="email" minlength="8" placeholder="Email" value="">
+          </div>
+          <!-- Password and Repassword detail-->
+    <div id="password_form">
+            <input name="Password" class="input_password" id="pass"  oninput="validateField(this.id,this.value)" type="password" minlength="6" placeholder="Password" value="">
+          </div>
+          <div id="Re_password_form">
+            <input name="enterRePassword" class="input_password" id="repassword"  oninput="validateField(this.id,this.value)" type="password"  minlength="6" placeholder="Confirm Password" value="">
+          </div>
+    <!-- Error Message on Invalid Input -->
+    <div id="ErrorMessage" class="error-msg" styles="display:none">
+
+    </div>
+    <!-- Submit data -->
+          <div class="pos-right-btn">
+          <button type="submit" id="registerBtn" class="cust-btn" >Register</button>
+    </div>
+    <div class="container signin">
+      <p style="text-align:center">Already have an account? <a href="login.html">Sign in</a>.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+<script src="./Scripts/app.js"></script>
+<script src="./Scripts/registration.js"></script>
+</html>

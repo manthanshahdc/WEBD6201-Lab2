@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <!--container start-->
+    <div id="container">
+      <div id="container_body">
+        <div>
+          <h2 class="form_title">Login</h2>       
+    </div>
+    <!--Form  start-->
+        <div id="form_name">
+          <div class="username">
+           <form name="form" action="index.html" method="GET">
+           <div id="errorBox">
+    </div>
+     <!--Username Detail-->
+            <input name="UserName" class="user_name"  id="username"  type="text" placeholder="Enter Your UserName" value="">
+         
+    </div>
+     <!--password Detail-->
+    <div id="password_form">
+            <input name="Password" class="input_password" id="pass"  type="password" placeholder="Enter Your Password" value="">
+          </div>       
+    <div id="ErrorMessage" class="error-msg" styles="display:none">
+        
+    </div>
+        <!--Login Button-->
+          <div class="pos-right-btn">
+          <button type="submit" id="loginBtn" class="cust-btn" >Login</button>
+    </div>
+    <div class="container signin">
+        <p style="text-align:center">Don't Have an account ?  <a href="registration.html">Register Here !</a>.</p>
+      </div>
+      
+    </form>
+    </div>
+    </div>
+    </div>
+
+</body>
+<script src="./Scripts/login.js"></script>
+</html>
